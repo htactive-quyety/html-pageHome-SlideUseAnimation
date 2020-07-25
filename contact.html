@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test HTML/CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="testhtml.css">
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <div class="row">
+                    <div class="col-3 col-sm-2 ">
+                        <img src="logo.img" alt="">
+                    </div>
+                    <div class=" col-9 col-sm-10">
+                        <h2>San Joaquin Valley Town Hall </h2>
+                        <h5><strong><i>&emsp;Bringing cutting-edge speakers to the valley</i></strong></h5>
+                    </div>
+                </div><br>
+                <div class="menu">
+                    <div class="row">
+                        <div class=" col-sm-2 col-md-6 col-lg-4"></div>
+                        <div class=" col-sm-12 col-md-6 col-lg-8">
+                            <div class="navbar" id="mynavbar">
+                                <a href="testhtml.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                                <a href="service.html"><i class="fa fa-fw fa-cloud"></i>Service</a>
+                                <a href="about.html"><i class="fa fa-fw fa-file"></i> About</a>
+                                <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-content w3-section slideshow">
+                <img class="slide" src="slide1.img" alt="slide1">
+                <img class="slide" src="slide2.img" alt="slide2">
+                <img class="slide" src="slide3.img" alt="slide3">
+                <img class="slide" src="slide4.img" alt="slide4">
+                <img class="slide" src="slide5.img" alt="slide5">
+                <div class="slidetime"></div>
+            </div><br>
+            <h2>CONTACT</h2>
+            <div class="row">
+                <div class="form col-sm-7 ">
+                    <p>If you need anything from us, please don't hesitate to contact with us via bellow form. We will contact you as soon as possible.</p>
+                    <form action="">
+                        <div class="form-group">
+                            <strong><label for="name">Name</label></strong>
+                            <span class="fa fa-user form-control-feedback"></span>
+                            <input class="form-control " id="name" type="name" placeholder="Please input your name" required>
+                        </div>
+                        <div class="form-group">
+                            <strong><label for="email">Your Email</label></strong>
+                            <span class="fa fa-envelope"></span>
+                            <input type="email" class="form-control" placeholder="Please input your nemail address" id="email" required>
+
+                        </div>
+                        <div class="form-group">
+                            <strong> <label for="subject">Subject</label></strong>
+                            <span class="fa fa-navicon form-control-feedback"></span>
+                            <input type="text" class="form-control" placeholder="What can we do to assit you?" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <strong><label for="message">Your message</label></strong>
+                            <span class="fa fa-pencil form-control-feedback"></span>
+                            <textarea type="" class="form-control" placeholder="Please input your name" id="message"></textarea>
+                        </div>
+                        <button type="button" value="submit" class="btn btn-danger" onclick="getData()">Send</button>
+                </div>
+                </form>
+
+                <div class="col-sm-5 contact">
+
+                    <br>
+
+                    <h6>HT ACTIVE</h6>
+                    <p><i class="fa fa-fw fa-home"></i>150 Duy Tan, Danang, Vietnam</p>
+                    <p><i class="fa fa-fw fa-phone"></i>0905 610 229</p>
+                    <p><i class="fa fa-fw fa-skype"></i>hoangvhh</p>
+                    <p><i class="fa fa-envelope"></i> recruit@htactive.com</p>
+                    <br>
+                    <div class="returnData"> Your Information:
+                        <br>
+                        <p id="output_name"> </p>
+                        <p id="output_email"> </p>
+                        <p id="output_subject"> </p>
+                        <p id="output_message"></p>
+
+                    </div>
+
+                </div>
+
+            </div><br>
+            <hr>
+            <div class="footer">
+                <div class="row">
+                    <div class=" col-4 col-sm-4 col-lg-6 col-xl-7"></div>
+                    <div class=" col-8 col-sm-8 col-lg-6 col-xl-5">@Copyright 2015 San Joaquin Valley Town Hall,</div>
+                </div>
+            </div><br>
+        </div>
+    </div>
+
+</body>
+
+<script src="testhtml.js"></script>
+
+</html>
